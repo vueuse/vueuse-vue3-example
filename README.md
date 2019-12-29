@@ -1,4 +1,6 @@
-# vue-next-webpack-preview
+# vueuse-next-example
+
+[**vueuse**](https://github.com/antfu/vueuse)
 
 Minimal webpack setup for Vue 3 (alpha). This is for preview purposes only. There might be bugs and undocumented behavior differences from v2, which are expected.
 
