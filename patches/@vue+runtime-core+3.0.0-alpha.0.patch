@@ -1,0 +1,21 @@
+diff --git a/node_modules/@vue/runtime-core/dist/runtime-core.esm-bundler.js b/node_modules/@vue/runtime-core/dist/runtime-core.esm-bundler.js
+index a44850d..17f56fb 100644
+--- a/node_modules/@vue/runtime-core/dist/runtime-core.esm-bundler.js
++++ b/node_modules/@vue/runtime-core/dist/runtime-core.esm-bundler.js
+@@ -1672,7 +1672,15 @@ if ( (process.env.NODE_ENV !== 'production')) {
+ }
+ const map = new Map();
+ function registerHMR(instance) {
+-    map.get(instance.type.__hmrId).instances.add(instance);
++    let record = map.get(instance.type.__hmrId)
++    if (!record) {
++        record = {
++            comp: instance.type,
++            instances: new Set(),
++        }
++        map.set(instance.type.__hmrId, record)
++    }
++    record.instances.add(instance);
+ }
+ function unregisterHMR(instance) {
+     map.get(instance.type.__hmrId).instances.delete(instance);
