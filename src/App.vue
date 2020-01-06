@@ -3,20 +3,33 @@
     <img src="./logo.svg" />
     <h1>Hello <a href='https://github.com/vuejs/vue-next' target='__blank'>Vue 3</a> and <a href='https://github.com/antfu/vueuse' target='__blank'>VueUse</a>!</h1>
 
-    <h2>{{new Date(now)}}</h2>
+    <h3>Mouse: {{x}} x {{y}}</h3>
+    <h3>
+      Counter: {{count}}
+      <a @click='inc()' style='margin-right:10px'>+</a>
+      <a @click='dec()'>-</a>
+    </h3>
+
+    <br/><br/>
+    <p><a href='https://github.com/antfu/vueuse-next-example' target='__blank'>Demo Source</a></p>
   </div>
 </template>
 
 <script>
 import { ref } from 'vue'
-import { useNow } from '@vueuse/core'
+import { useMouse, useCounter } from '@vueuse/core'
 
 export default {
   setup() {
-    const now = useNow()
+    const { x, y } = useMouse()
+    const { count, inc, dec } = useCounter()
 
     return {
-      now
+      x, 
+      y,
+      count,
+      inc,
+      dec,
     }
   }
 }
@@ -27,6 +40,7 @@ export default {
 
 html, body, h1, h2, h3, p {
   font-family: 'Noto Serif', serif;
+  user-select: none;
 }
 
 #app {
@@ -39,5 +53,6 @@ img {
 a {
   color: #41b883;
   text-decoration: none;
+  cursor: pointer;
 }
 </style>
