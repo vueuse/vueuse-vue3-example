@@ -1,7 +1,23 @@
-# vueuse-next-example
+<h1 align='center'>Vue3 VueUse Example</h1>
 
-[**vueuse**](https://github.com/antfu/vueuse)
+<p align='center'>
+<img src='./src/logo.svg' height='120'/>
+</p>
 
-Minimal webpack setup for Vue 3 (alpha). This is for preview purposes only. There might be bugs and undocumented behavior differences from v2, which are expected.
 
-Also note that if you are using VSCode, Vetur isn't updated to take advantage of Vue 3's typing yet so intellisense in Vue files may not be fully functional (especially in templates).
+Example for [Vue3](https://github.com/vuejs/vue-next) + [VueUse](https://github.com/antfu/vueuse) with [Webpack](https://webpack.js.org/)
+
+🌐 [Live Demo](https://vueuse-next-example.netlify.app/)
+
+📦 [Vite Example](https://github.com/antfu/vite-vueuse-starter)
+
+## Installation
+
+1. Clone this repository
+2. `yarn`
+3. `yarn dev`
+4.  open http://localhost:3000 in your browser
+
+## License
+
+[MIT](http://opensource.org/licenses/MIT)
