@@ -13,6 +13,7 @@
     <br/><br/>
     <p><a href='https://github.com/antfu/vueuse-next-example' target='__blank'>Source</a></p>
     <p><a href='https://vite-vueuse-starter.netlify.app/' target='__blank'>Vite Starter</a></p>
+    <p><a href='https://vueuse-vue2-example.netlify.app/' target='__blank'>Vue 2 Example</a></p>
   </div>
 </template>
 

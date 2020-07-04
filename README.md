@@ -10,13 +10,14 @@ Example for [Vue3](https://github.com/vuejs/vue-next) + [VueUse](https://github.
 🌐 [Live Demo](https://vueuse-next-example.netlify.app/)
 
 📦 [Vite Example](https://github.com/antfu/vite-vueuse-starter)
+📦 [Vue2 CLI Example](https://github.com/antfu/vueuse-vue2-example)
 
 ## Installation
 
 1. Clone this repository
 2. `yarn`
 3. `yarn dev`
-4.  open http://localhost:3000 in your browser
+4.  open http://localhost:8080 in your browser
 
 ## License
 
